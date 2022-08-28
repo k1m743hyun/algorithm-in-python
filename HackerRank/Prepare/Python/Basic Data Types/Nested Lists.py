@@ -1,8 +1,8 @@
 if __name__ == '__main__':
     students = []
-    for _ in range(int(raw_input())):
-        name = raw_input()
-        score = float(raw_input())
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
         
         students.append([name, score])
     
