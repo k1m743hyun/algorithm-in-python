@@ -7,7 +7,6 @@ import re
 import sys
 
 
-
 if __name__ == '__main__':
     nm = input().split()
     n = int(nm[0])
