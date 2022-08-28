@@ -1,9 +1,9 @@
 if __name__ == '__main__':
-    N = int(raw_input())
+    N = int(input())
     
     result = []
     for _ in range(N):
-        line = raw_input().split()
+        line = input().split()
         
         if line[0] == 'insert':
             result.insert(int(line[1]), int(line[2]))
