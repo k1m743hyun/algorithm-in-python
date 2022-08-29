@@ -1,4 +1,5 @@
-cube = lambda x: x**3# complete the lambda function 
+cube = lambda x: x ** 3  # complete the lambda function
+
 
 def fibonacci(n):
     # return a list of fibonacci numbers
@@ -9,9 +10,10 @@ def fibonacci(n):
         elif i == 1:
             result.append(1)
         else:
-            result.append(result[i-1]+result[i-2])
-    
+            result.append(result[i - 1] + result[i - 2])
+
     return result
+
 
 if __name__ == '__main__':
     n = int(input())
