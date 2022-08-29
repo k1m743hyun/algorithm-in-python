@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'rotLeft' function below.
 #
@@ -21,6 +22,7 @@ def rotLeft(a, d):
         temp = a.pop(0)
         a.append(temp)
     return a
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
