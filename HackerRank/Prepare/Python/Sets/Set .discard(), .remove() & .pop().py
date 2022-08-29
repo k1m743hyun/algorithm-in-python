@@ -3,7 +3,7 @@ s = set(map(int, input().split()))
 
 for _ in range(int(input())):
     line = input().split()
-    
+
     if line[0] == 'pop':
         s.pop()
     elif line[0] == 'remove':
