@@ -5,7 +5,7 @@ n = int(input())
 
 color_pattern = '#[A-Fa-f0-9]{3,6}'
 
-code_comp = re.compile('[ :]+'+color_pattern)
+code_comp = re.compile('[ :]+' + color_pattern)
 color_comp = re.compile(color_pattern)
 
 result = []
