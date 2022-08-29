@@ -7,6 +7,7 @@ import re
 import sys
 from collections import Counter
 
+
 #
 # Complete the 'sockMerchant' function below.
 #
@@ -19,6 +20,7 @@ from collections import Counter
 def sockMerchant(n, ar):
     # Write your code here
     return sum(map(lambda x: x // 2, Counter(ar).values()))
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
