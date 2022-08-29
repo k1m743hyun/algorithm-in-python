@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'twoStrings' function below.
 #
@@ -20,10 +21,11 @@ def twoStrings(s1, s2):
     flag = 'NO'
     for s in s1:
         if s in s2:
-            flag ='YES'
+            flag = 'YES'
             break
-        
+
     return flag
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
