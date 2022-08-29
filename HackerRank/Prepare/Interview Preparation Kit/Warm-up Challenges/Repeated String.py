@@ -7,6 +7,7 @@ import re
 import sys
 from collections import Counter
 
+
 #
 # Complete the 'repeatedString' function below.
 #
@@ -18,8 +19,9 @@ from collections import Counter
 
 def repeatedString(s, n):
     # Write your code here
-    #return Counter(s * (n // len(s)) + s[:n % len(s)])['a']
+    # return Counter(s * (n // len(s)) + s[:n % len(s)])['a']
     return Counter(s)['a'] * (n // len(s)) + Counter(s[:n % len(s)])['a']
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
