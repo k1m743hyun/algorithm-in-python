@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'hourglassSum' function below.
 #
@@ -16,11 +17,14 @@ import sys
 def hourglassSum(arr):
     # Write your code here
     result = []
-    for i in range(1, len(arr)-1):
-        for j in range(1, len(arr[i])-1):
-            result.append(sum([arr[i-1][j-1], arr[i-1][j], arr[i-1][j+1], arr[i][j], arr[i+1][j-1], arr[i+1][j], arr[i+1][j+1]]))
+    for i in range(1, len(arr) - 1):
+        for j in range(1, len(arr[i]) - 1):
+            result.append(
+                sum([arr[i - 1][j - 1], arr[i - 1][j], arr[i - 1][j + 1], arr[i][j], arr[i + 1][j - 1], arr[i + 1][j],
+                     arr[i + 1][j + 1]]))
 
     return max(result)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
