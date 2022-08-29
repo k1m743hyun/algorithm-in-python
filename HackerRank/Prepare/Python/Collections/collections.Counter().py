@@ -6,7 +6,7 @@ sell = 0
 n = int(input())
 for _ in range(n):
     size, price = map(int, input().split())
-    
+
     if size in size_list:
         size_list.pop(size_list.index(size))
         sell += price
