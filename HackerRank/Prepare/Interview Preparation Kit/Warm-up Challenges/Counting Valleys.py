@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'countingValleys' function below.
 #
@@ -24,16 +25,17 @@ def countingValleys(steps, path):
             level += 1
         else:
             level -= 1
-        
+
         result.append(level)
-    
+
     cnt = 0
-    for i in range(len(result)-1):
-        if result[i] < 0 and result [i+1] == 0:
+    for i in range(len(result) - 1):
+        if result[i] < 0 and result[i + 1] == 0:
             cnt += 1
-            
+
     return cnt
-        
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
