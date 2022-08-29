@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'jumpingOnClouds' function below.
 #
@@ -21,22 +22,23 @@ def jumpingOnClouds(c):
             result.append(v)
         else:
             if i < len(c) - 1:
-                if c[i-1] == c[i] == c[i+1]:
+                if c[i - 1] == c[i] == c[i + 1]:
                     c[i] = 1
                     result.append(1)
-                elif c[i-1] == c[i]:
+                elif c[i - 1] == c[i]:
                     result.append(1)
                     result.append(v)
                 else:
                     result.append(v)
             else:
-                if c[i-1] == c[i]:
+                if c[i - 1] == c[i]:
                     result.append(1)
                     result.append(v)
                 else:
                     result.append(v)
-    
+
     return sum(result)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
