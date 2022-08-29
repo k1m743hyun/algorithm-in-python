@@ -7,6 +7,7 @@ import re
 import sys
 from collections import Counter
 
+
 #
 # Complete the 'checkMagazine' function below.
 #
@@ -18,6 +19,7 @@ from collections import Counter
 def checkMagazine(magazine, note):
     # Write your code here    
     print('No' if Counter(note) - Counter(magazine) else 'Yes')
+
 
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
