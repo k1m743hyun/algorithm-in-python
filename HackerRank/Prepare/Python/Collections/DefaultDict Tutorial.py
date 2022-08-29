@@ -6,6 +6,6 @@ b = [input() for _ in range(m)]
 
 for c in b:
     if c in a:
-        print(' '.join([str(i+1) for i, e in enumerate(a) if e == c]))
+        print(' '.join([str(i + 1) for i, e in enumerate(a) if e == c]))
     else:
         print(-1)
