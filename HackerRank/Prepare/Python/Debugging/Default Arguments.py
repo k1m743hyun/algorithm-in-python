@@ -7,6 +7,7 @@ class EvenStream(object):
         self.current += 2
         return to_return
 
+
 class OddStream(object):
     def __init__(self):
         self.current = 1
@@ -15,6 +16,7 @@ class OddStream(object):
         to_return = self.current
         self.current += 2
         return to_return
+
 
 def print_from_stream(n, stream=EvenStream()):
     stream.__init__()
