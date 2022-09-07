@@ -1,9 +1,12 @@
 from typing import List
+from collections import defaultdict
 
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        results = {v: [] for v in set([''.join(sorted(s)) for s in strs])}
+        results = defaultdict(list)
+
         for s in strs:
             results[''.join(sorted(s))].append(s)
-        return sorted(map(lambda x: sorted(x), results.values()), key=lambda x: len(x))
+
+        return results.values()
