@@ -2,17 +2,19 @@ import sys
 
 t = int(sys.stdin.readline())
 for _ in range(t):
-    stack = 0
+    stack = []
 
     flag = 1
-    for ps in sys.stdin.readline()[:-1]:
-        if ps == '(':
-            stack += 1
-        else:
-            if stack == 0:
+    for char in sys.stdin.readline():
+        if char == '(':
+            stack.append('(')
+
+        elif char == ')':
+            if not stack or stack.pop() != '(':
                 flag = 0
                 break
-            stack -= 1
 
+    if stack:
+        flag = 0
 
-    print('YES' if flag and stack == 0 else 'NO')
+    print('YES' if flag else 'NO')
