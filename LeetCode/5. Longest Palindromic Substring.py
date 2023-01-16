@@ -15,3 +15,13 @@ class Solution:
             result = max(result, extend(i, i + 1), extend(i, i + 2), key=len)
 
         return result
+
+
+if __name__ == '__main__':
+    # Test Case 1
+    s = "babad"
+    print(Solution().longestPalindrome(s))  # "bab"
+
+    # Test Case 2
+    s = "cbbd"
+    print(Solution().longestPalindrome(s))  # "bb"
