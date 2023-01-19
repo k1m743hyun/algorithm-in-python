@@ -12,3 +12,13 @@ class Solution:
             else:
                 break
         return common_prefix
+
+
+if __name__ == '__main__':
+    # Test Case 1
+    strs = ["flower", "flow", "flight"]
+    print(Solution().longestCommonPrefix(strs))  # fl
+
+    # Test Case 2
+    strs = ["dog", "racecar", "car"]
+    print(Solution().longestCommonPrefix(strs))  #
