@@ -8,6 +8,6 @@ if __name__ == '__main__':
     x = 4
     print(Solution().mySqrt(x))  # 2
 
-    # Test Case 1
+    # Test Case 2
     x = 8
     print(Solution().mySqrt(x))  # 2
