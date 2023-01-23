@@ -9,3 +9,13 @@ class Solution:
                 num -= 1
                 step += 1
         return step
+
+
+if __name__ == '__main__':
+    # Test Case 1
+    num = 14
+    print(Solution().numberOfSteps(num))  # 6
+
+    # Test Case 2
+    num = 8
+    print(Solution().numberOfSteps(num))  # 4
