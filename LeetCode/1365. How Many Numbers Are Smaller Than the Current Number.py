@@ -11,3 +11,13 @@ class Solution:
                     cnt += 1
             result.append(cnt)
         return result
+
+
+if __name__ == '__main__':
+    # Test Case 1
+    nums = [6, 5, 4, 8]
+    print(Solution().smallerNumbersThanCurrent(nums))  # [2, 1, 0, 3]
+
+    # Test Case 2
+    nums = [7, 7, 7, 7]
+    print(Solution().smallerNumbersThanCurrent(nums))  # [0, 0, 0, 0]
